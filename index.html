@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>OTT Platform</title>
+	<style>
+		* {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.column {
+			margin: 2% 2% 2% 2%;
+			width: 96.33%;
+			padding: 10px;
+			display: flex;
+			flex-direction: column;
+		}
+
+		h2 {
+			font-size: 35px;
+			margin: 3.4% -2.8% 0.3% 0.3%;
+		}
+
+		.row {
+			width: 98.50%;
+			height: 12%;
+			padding: 10px;
+			display: flex;
+			flex-direction: row;
+		}
+
+		.card {
+			margin: 0.5% 0.5% 0.5% 0.5%;
+			padding: 0.1%;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			transition: 0.3s;
+			width: 100%;
+			border-radius: 15px;
+		}
+
+		.card:hover {
+			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+		}
+
+		.container {
+			padding: 0px 6px 0px 0px;
+		}
+
+		.container h4 {
+			font-size: 28px;
+			margin: 0.5% 0.5% 0.5% 1.5%;
+		}
+
+		.container button {
+			width: 102%;
+			margin: 1px 1px 1px 1px;
+			font-size: 32px;
+			background-color: transparent;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			overflow: hidden;
+			color: #ffa500;
+		}
+
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			position: fixed;
+			top: 0;
+			height: 12%;
+			width: 100%;
+			margin: 0% -0.9% 0.4% -0.6%;
+		}
+
+		.navbar a {
+
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+			margin: 0% -0.9% 0.4% -0.6%;
+		}
+
+		.active {
+			font-size: 60px;
+			margin: 0px 0px -10px 0px;
+		}
+
+		.navbar a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+
+		.navbar a.active {
+			font-size: 23px;
+			background-color: #4CAF50;
+			color: white;
+		}
+
+		img {
+			width: 99%;
+			border: none;
+			border-radius: 15px;
+			height: 58%;
+		}
+
+		.carousel {
+			margin: 3.4% 0% 1% 0%;
+			width: 100%;
+			height: 500px;
+			overflow: hidden;
+			position: relative;
+		}
+
+		.image-container {
+			width: 500%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			animation: slide 20s infinite;
+		}
+
+		.image-container img {
+			width: 20%;
+			height: 100%;
+			float: left;
+			border-radius: 0%;
+			border-color: transparent;
+
+		}
+
+		@keyframes slide {
+			0% {
+				left: 0;
+			}
+
+			20% {
+				left: -100%;
+			}
+
+			40% {
+				left: -200%;
+			}
+
+			60% {
+				left: -300%;
+			}
+
+			80% {
+				left: -400%;
+			}
+
+			100% {
+				left: 0;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="navbar">
+		<a class="active" href="#">Popco</a>
+	</div>
+	<div class="carousel">
+		<div class="image-container">
+			<img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00304730-utdfpwtqqb-landscape.jpg"
+				alt="Image 1">
+
+			<img src="https://i.ytimg.com/vi/3uvfq4Cu8R8/hqdefault.jpg"	alt="Image 3">
+			<img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00304730-utdfpwtqqb-landscape.jpg"
+				alt="Image 4">
+			<img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00304730-utdfpwtqqb-landscape.jpg"
+				alt="Image 5">
+		</div>
+	</div>
+	<div class="column">
+		<h2>Bollywood</h2>
+		<div class="row">
+			<div class="card">
+				<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQlbQ0XSjfSxyArSNuUyLcL6eCsPqgqyyuOw2J4rl3Hin5NRs3Y"
+					alt="Bollywood Movie 1">
+				<div class="container">
+					<h4><b>Bollywood Movie 1</b></h4>
+					<button onclick="callFunction()">Watch Now</button>
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbdefKVfdaOD_gawmaqSckxnO7V6jaNWW3FVd_NbL9Ig&s"
+					alt="Fighter">
+				<div class="container">
+					<h4><b>Fighter</b></h4>
+					<button onclick="callFunction()">Watch Now</button>
+				</div>
+			</div>
+			<div class="card">
+				<img src="https://upload.wikimedia.org/wikipedia/en/b/bd/ThePopesExorcistPoster.png"
+					alt="Bollywood Movie 1">
+				<div class="container">
+					<h4><b>Bollywood Movie 1</b></h4>
+					<button onclick="callFunction()">Watch Now</button>
+				</div>
+			</div>
+			<div class="card">
+				<img src="bollywood3.jpg" alt="Bollywood Movie 3" style="width:100%">
+				<div class="container">
+					<h4><b>Bollywood Movie 3</b></h4>
+					<p>Movie description.</p>
+					<button onclick="callFunction()">Watch Now</button>
+				</div>
+			</div>
+			<div class="card">
+				<img src="bollywood4.jpg" alt="Bollywood Movie 4" style="width:100%">
+				<div class="container">
+					<h4><b>Bollywood Movie 4</b></h4>
+					<p>Movie description.</p>
+					<button onclick="callFunction()">Watch Now</button>
+				</div>
+			</div>
+			<div class="card">
+				<img src="bollywood5.jpg" alt="Bollywood Movie 5" style="width:100%">
+				<div class="container">
+					<h4><b>Bollywood Movie 5</b></h4>
+					<p>Movie description.</p>
+					<button onclick="callFunction()">Watch Now</button>
+				</div>
+			</div>
+		</div>
+		<h2>Hollywood</h2>
+		<div class="row">
+
+			<div class="card">
+				<img src="hollywood1.jpg" alt="Hollywood Movie 1" style="width:100%">
+				<div class="container">
+					<h4><b>Hollywood Movie 1</b></h4>
+					<p>Movie description.</p>
+					<button onclick="callFunction()">Watch Now</button>
+				</div>
+			</div>
+			<div class="card">
+				<img src="hollywood2.jpg" alt="Hollywood Movie 2" style="width:100%">
+				<div class="container">
+					<h4><b>Hollywood Movie 2</b></h4>
+					<p>Movie description.</p>
+					<button onclick="callFunction()">Watch Now</button>
+				</div>
+			</div>
+			<div class="card">
+				<img src="hollywood3.jpg" alt="Hollywood Movie 3" style="width:100%">
+				<div class="container">
+					<h4><b>Hollywood Movie 3</b></h4>
+					<p>Movie description.</p>
+					<button onclick="callFunction()">Watch Now</button>
+				</div>
+			</div>
+			<div class="card">
+				<img src="hollywood4.jpg" alt="Hollywood Movie 4" style="width:100%">
+				<div class="container">
+					<h4><b>Hollywood Movie 4</b></h4>
+					<p>Movie description.</p>
+					<button onclick="callFunction()">Watch Now</button>
+				</div>
+			</div>
+			<div class="card">
+				<img src="hollywood5.jpg" alt="Hollywood Movie 5" style="width:100%">
+				<div class="container">
+					<h4><b>Hollywood Movie 5</b></h4>
+					<p>Movie description.</p>
+					<button onclick="callFunction()">Watch Now</button>
+				</div>
+			</div>
+		</div>
+		<h2>Other</h2>
+		<div class="row">
+
+			<div class="card">
+				<img src="other1.jpg" alt="Other Movie 1" style="width:100%">
+				<div class="container">
+					<h4><b>Other Movie 1</b></h4>
+					<p>Movie description.</p>
+					<button onclick="callFunction()">Watch Now</button>
+				</div>
+			</div>
+			<div class="card">
+				<img src="other2.jpg" alt="Other Movie 2" style="width:100%">
+				<div class="container">
+					<h4><b>Other Movie 2</b></h4>
+					<p>Movie description.</p>
+					<button onclick="callFunction()">Watch Now</button>
+				</div>
+			</div>
+			<div class="card">
+				<img src="other3.jpg" alt="Other Movie 3" style="width:100%">
+				<div class="container">
+					<h4><b>Other Movie 3</b></h4>
+					<p>Movie description.</p>
+					<button onclick="callFunction()">Watch Now</button>
+				</div>
+			</div>
+			<div class="card">
+				<img src="other4.jpg" alt="Other Movie 4" style="width:100%">
+				<div class="container">
+					<h4><b>Other Movie 4</b></h4>
+					<p>Movie description.</p>
+					<button onclick="callFunction()">Watch Now</button>
+				</div>
+			</div>
+			<div class="card">
+				<img src="other5.jpg" alt="Other Movie 5" style="width:100%">
+				<div class="container">
+					<h4><b>Other Movie 5</b></h4>
+					<p>Movie description.</p>
+					<button onclick="callFunction()">Watch Now</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		function callFunction() {
+			window.location.assign("./link.html");
+		}
+	</script>
+</body>
+
+</html>
