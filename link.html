@@ -13,11 +13,29 @@
     body{
         margin: 12%;
     }
+    body {
+        margin: 2% 1% 0% 5%; /* Remove default margins for better control */
+      }
+    button{
+      margin:12px 12px 12px 12px;
+        background-color: white;
+        width: 8%;
+
+      }
 </style>
 <body>
     
     <div>
         <a href="https://drive.google.com/file/d/1y7HtDiC659uOYjbR72A_Ye501cClUBJ8/view?usp=sharing" >THe Hack</a>
     </div>
-</body>
-</html>
+    <div class="video-container">
+     <button aria-placeholder="Google PopcoFlix" onclick="googlepopcoflix()">
+      Google PopcoFlix</button>
+    </div>
+  </body>
+  <script>
+    function googlepopcoflix(){
+        window.location.assign("https://sites.google.com/view/popcoflix/work");
+    }
+  </script>
+  </html>
